@@ -68,7 +68,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 300px;
+    bottom: 600px;
 
     width: 85%;
     max-width: 500px;
