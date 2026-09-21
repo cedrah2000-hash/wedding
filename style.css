@@ -49,19 +49,47 @@ body {
    ========================= */
 
 .page2 {
-    width: 100%;
-    margin: 0;
-    padding: 0;
     position: relative;
-    background-color: #f5eee6;
+    overflow: hidden;
 }
 
 .page2 > img {
     display: block;
     width: 100%;
     height: auto;
+    margin: 0;
 }
 
+.page2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 45%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.45),
+        transparent
+    );
+
+    z-index: 2;
+    pointer-events: none;
+
+    animation: lightSweep 2s ease-out 0.8s 1;
+}
+
+@keyframes lightSweep {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 150%;
+    }
+}
 
 /* MAP فوق أسفل الصورة */
 .google-map {
