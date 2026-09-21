@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sedra & Ramy</title>
+
+    <link rel="stylesheet" href="./style.css">
+       
+</head>
+
+<body>
+      <audio id="backgroundMusic" loop>
+        <source src="images/onlywhen.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+    const music = document.getElementById("backgroundMusic");
+
+    document.addEventListener("click", function () {
+        music.play();
+    }, { once: true });
+    </script>
+
+    <main>
+
+        <!-- PAGE 1 -->
+        <section class="page page1"
+        onclick="document.getElementById('wedding-music').play();">
+            
+            
+
+            <div class="invitation-card">
+
+                <img 
+                    src="images/aloveletter.png"
+                    class="love-letter"
+                   
+                >
+                <img
+                    src="images/ramyand.png"
+                    class="couple">
+
+                <img 
+                    src="images/pressopen.png"
+                    class="press-open"
+                    alt="Press to open"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- PAGE 2 -->
+        <section class="page page2"
+        
+            
+
+            <h2></h2>
+
+           <img src="images/24.png"
+             class="new-image">   
+            </a>
+
+        </section>
+
+
+        <!-- PAGE 3 -->
+        <section class="page page3">
+            <img src="images/25.png"
+            class="image-25">
+        </section>
+
+
+        <!-- PAGE 4 -->
+        <section class="page page4">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6aw0mRkVKkrtqVEwNXwOQoTQumnC0huQUVIW-SSg0Dfd0Cg/viewform"
+            class="image-30-link">
+           <img src="images/30.png"
+           class="image-30"
+            >
+             
+           
+</a> 
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
