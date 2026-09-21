@@ -19,9 +19,7 @@ body {
     width: 100%;
     min-height: 100vh;
 }
-#backgroundMusic {
-    display: none;
-}
+
 
 /* PAGE 1 */
 
@@ -122,17 +120,20 @@ body {
 .page4 {
     position: relative;
 }
-    .image30-link {
+    .image-30-link {
     position: absolute;
         display: block;
-}
-
-    .image-30 {
-        position: absolute;
-        width: 40%;
+         width: 40%;
         left: 50%;
         transform: translateX(-50%);
         top: 280%;
+}
+
+    .image-30 {
+        display: block;
+        width: 100%;
+        height: auto;
+       
     }
 
 
