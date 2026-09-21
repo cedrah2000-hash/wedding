@@ -90,11 +90,28 @@ body {
     display: flex;
     justify-content: center;
 }
-
 .form-link img {
-    display: block;
-    width: 60%;
-    max-width: 60%;
-    height: auto;
+    display: block !important;
+    width: 60% !important;
+    max-width: 60% !important;
+    height: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0;
+
+    animation: rsvpPulse 3s ease-in-out infinite;
 }
+
+@keyframes rsvpPulse {
+    0%, 70%, 100% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(1.05);
+    }
+
+    90% {
+        transform: scale(1);
+    }
 }
