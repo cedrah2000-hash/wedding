@@ -1,4 +1,4 @@
-* * {
+*  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,13 +10,30 @@ html {
 
 body {
     margin: 0;
+    padding: 0;
     width: 100%;
     overflow-x: hidden;
 }
 
+/* AUDIO */
+#backgroundMusic {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+
+/* =========================
+   ALL PAGES
+   ========================= */
+
 .page {
     width: 100%;
+    margin: 0;
+    padding: 0;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -36,28 +53,34 @@ body {
     position: relative;
 }
 
+.invitation-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
 .love-letter {
     position: absolute;
     top: 7%;
     left: 50%;
-    transform: translateX(-50%);
     width: 70%;
+    transform: translateX(-50%);
 }
 
 .couple {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
     width: 100%;
+    transform: translateX(-50%);
 }
 
 .press-open {
     position: absolute;
     bottom: 5%;
     left: 50%;
-    transform: translateX(-50%);
     width: 70%;
+    transform: translateX(-50%);
 }
 
 
@@ -67,27 +90,18 @@ body {
 
 .page2 {
     width: 100%;
-    aspect-ratio: 9 / 16;
-
-    background-image: url("images/22.png");
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-
+    height: auto;
     position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 .new-image {
     display: block;
-    position: absolute;
-
     width: 100%;
-    max-width: 100%;
-
-    left: 50%;
-    top: 0;
-
-    transform: translateX(-50%);
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -97,23 +111,18 @@ body {
 
 .page3 {
     width: 100%;
-    aspect-ratio: 9 / 16;
-
+    height: auto;
     position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 .image-25 {
     display: block;
-
-    position: absolute;
-
     width: 100%;
-    max-width: 100%;
-
-    left: 50%;
-    top: 0;
-
-    transform: translateX(-50%);
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -123,29 +132,26 @@ body {
 
 .page4 {
     width: 100%;
-    aspect-ratio: 9 / 16;
-
+    height: auto;
     position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 .image-30-link {
-    position: absolute;
-
     display: block;
-
-    width: 40%;
-
-    left: 50%;
-    top: 0;
-
-    transform: translateX(-50%);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
 }
 
 .image-30 {
     display: block;
-
     width: 100%;
     height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -155,30 +161,25 @@ body {
 
 @media (max-width: 600px) {
 
-    .page {
-        width: 100%;
-    }
-
-    .page1,
+    .page,
     .page2,
     .page3,
     .page4 {
         width: 100%;
-        aspect-ratio: 9 / 16;
+        margin: 0;
+        padding: 0;
     }
 
-    .new-image {
+    .new-image,
+    .image-25,
+    .image-30 {
         width: 100%;
-        top: 0;
-    }
-
-    .image-25 {
-        width: 100%;
-        top: 0;
+        height: auto;
+        display: block;
     }
 
     .image-30-link {
-        width: 40%;
-        top: 0;
+        width: 100%;
+        display: block;
     }
 }
