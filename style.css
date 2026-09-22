@@ -93,18 +93,15 @@ body {
 
 /* MAP فوق أسفل الصورة */
 .google-map {
+    box-sizing: 50%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 222px;
-
-    width: 70%;
-    max-width: 500px;
-    height: 250px;
-
+    bottom: 60vw;
+    width: 70vw;
+    height: 40vw;
     border: 0;
-    margin: 0;
-}
+    margin: 0;}
 
 
 /* 30.png تحت الخريطة */
